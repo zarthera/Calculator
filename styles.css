@@ -57,6 +57,10 @@ body{
     color: white;
 
 } 
+.row1 > .clear{
+    width: 68%;
+    border-radius: 40px;
+}
 .divide, .times, .minus, .plus, .equals{
     background-color: #FF8C00;
 }
@@ -74,5 +78,5 @@ body{
 }
 .row5 > .zero{
     border-radius: 40px;
-    width: 39%;
+    width: 43%;
 }
