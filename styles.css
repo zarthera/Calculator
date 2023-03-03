@@ -2,10 +2,29 @@
     font-family: "Lato";
     src: url(fonts/Lato-Regular.ttf);
 }
-body{
+@media (max-width: 700px){
+    body > .container{
+        width: 85dvw;
+    }
+}
+@media (max-width: 390px){
+    .row1 > .button, .row2 > .button, .row3 > .button, .row4 > .button, .row5 > .button{
+        width: 60px;
+        height: 60px;
+        font-size: 36px;
+    }
+}
+@media (min-height: 1000px){
+    .row1 > .button, .row2 > .button, .row3 > .button, .row4 > .button, .row5 > .button{
+        font-size: 50px;
+    }
+}
+    body{
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 95dvw;
+    height: 95dvh;
     gap: 15px;
     background-color: #252323;   
 }
@@ -20,7 +39,7 @@ body{
     justify-content: space-between;
     align-items: center;
     width: 400px;
-    height: 85vh;
+    height: 86dvh;
     border: 2px solid black;
     background-color: #111111;
 
@@ -37,20 +56,20 @@ body{
     justify-content: space-between;
     padding: 16px;
     height: 65%;
-    width: 100%
+    width: 100%;
 }
 .row1, .row2, .row3, .row4, .row5{
     display: flex;
     justify-content: space-around;
-    width: 100%
+    width: 100%;
 
 }
-.row1 > div, .row2 > div, .row3 > div, .row4 > div, .row5 > div{
+.button{
     font-size: 36px;
     font-family: "Lato";
     border-radius: 50%;
-    width: 75px;
-    height: 75px;
+    width: 80px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
